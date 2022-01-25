@@ -1,12 +1,12 @@
-#import "FlutterBuglyPlugin.h"
+#import "FlutterBuglyPlayPlugin.h"
 #import <Bugly/Bugly.h>
 
-@implementation FlutterBuglyPlugin
+@implementation FlutterBuglyPlayPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel = [FlutterMethodChannel
-      methodChannelWithName:@"crazecoder/flutter_bugly"
+      methodChannelWithName:@"crazecoder/flutter_bugly_play"
             binaryMessenger:[registrar messenger]];
-  FlutterBuglyPlugin* instance = [[FlutterBuglyPlugin alloc] init];
+  FlutterBuglyPlayPlugin* instance = [[FlutterBuglyPlayPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
 

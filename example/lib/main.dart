@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_bugly/flutter_bugly.dart';
+import 'package:flutter_bugly_play/flutter_bugly.dart';
 
 import 'update_dialog.dart';
 

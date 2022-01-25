@@ -29,9 +29,9 @@ import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /**
- * FlutterBuglyPlugin
+ * FlutterBuglyPlayPlugin
  */
-public class FlutterBuglyPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
+public class FlutterBuglyPlayPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
     private Result result;
     private boolean isResultSubmitted = false;
     private static MethodChannel channel;
@@ -45,7 +45,7 @@ public class FlutterBuglyPlugin implements FlutterPlugin, MethodCallHandler, Act
      */
     public static void registerWith(Registrar registrar) {
         channel = new MethodChannel(registrar.messenger(), "crazecoder/flutter_bugly");
-        FlutterBuglyPlugin plugin = new FlutterBuglyPlugin();
+        FlutterBuglyPlayPlugin plugin = new FlutterBuglyPlayPlugin();
         channel.setMethodCallHandler(plugin);
         activity = registrar.activity();
     }
