@@ -12,7 +12,7 @@ class FlutterBugly {
   FlutterBugly._();
 
   static const MethodChannel _channel = MethodChannel(
-    'crazecoder/flutter_bugly',
+    'crazecoder/flutter_bugly_play',
   );
 
   static final StreamController<UpgradeInfo> _onCheckUpgrade =

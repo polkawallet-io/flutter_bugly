@@ -1,4 +1,4 @@
-package com.crazecoder.flutterbugly.callback;
+package com.crazecoder.flutterbuglyPlay.callback;
 
 import com.tencent.bugly.beta.UpgradeInfo;
 

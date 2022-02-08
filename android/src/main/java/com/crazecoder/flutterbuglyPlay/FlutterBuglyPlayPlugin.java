@@ -1,4 +1,4 @@
-package com.crazecoder.flutterbugly;
+package com.crazecoder.flutterbuglyPlay;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -6,9 +6,9 @@ import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 
-import com.crazecoder.flutterbugly.bean.BuglyInitResultInfo;
-import com.crazecoder.flutterbugly.utils.JsonUtil;
-import com.crazecoder.flutterbugly.utils.MapUtil;
+import com.crazecoder.flutterbuglyPlay.bean.BuglyInitResultInfo;
+import com.crazecoder.flutterbuglyPlay.utils.JsonUtil;
+import com.crazecoder.flutterbuglyPlay.utils.MapUtil;
 import com.tencent.bugly.Bugly;
 import com.tencent.bugly.beta.Beta;
 import com.tencent.bugly.beta.UpgradeInfo;
@@ -44,7 +44,7 @@ public class FlutterBuglyPlayPlugin implements FlutterPlugin, MethodCallHandler,
      * Plugin registration.
      */
     public static void registerWith(Registrar registrar) {
-        channel = new MethodChannel(registrar.messenger(), "crazecoder/flutter_bugly");
+        channel = new MethodChannel(registrar.messenger(), "crazecoder/flutter_bugly_play");
         FlutterBuglyPlayPlugin plugin = new FlutterBuglyPlayPlugin();
         channel.setMethodCallHandler(plugin);
         activity = registrar.activity();
@@ -207,7 +207,7 @@ public class FlutterBuglyPlayPlugin implements FlutterPlugin, MethodCallHandler,
     @Override
     public void onAttachedToActivity(@NonNull ActivityPluginBinding binding) {
         activity = binding.getActivity();
-        channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "crazecoder/flutter_bugly");
+        channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "crazecoder/flutter_bugly_play");
         channel.setMethodCallHandler(this);
     }
 

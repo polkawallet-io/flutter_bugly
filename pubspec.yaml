@@ -16,7 +16,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.crazecoder.flutterbugly
+        package: com.crazecoder.flutterbuglyPlay
         pluginClass: FlutterBuglyPlayPlugin
       ios:
         pluginClass: FlutterBuglyPlayPlugin

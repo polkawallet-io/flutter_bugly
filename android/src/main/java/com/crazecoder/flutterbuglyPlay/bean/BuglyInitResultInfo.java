@@ -1,4 +1,4 @@
-package com.crazecoder.flutterbugly.bean;
+package com.crazecoder.flutterbuglyPlay.bean;
 
 /**
  * Note of this class.

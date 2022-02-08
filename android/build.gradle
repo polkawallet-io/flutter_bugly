@@ -1,4 +1,4 @@
-group 'com.crazecoder.flutterbugly'
+group 'com.crazecoder.flutterbuglyPlay'
 version '1.0-SNAPSHOT'
 
 buildscript {
